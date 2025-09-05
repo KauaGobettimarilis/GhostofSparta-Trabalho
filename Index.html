@@ -15,6 +15,7 @@
             background-color: rgb(160, 0, 0);
             color: black
         }
+
         header {
             background-color: grey;
             padding: 20px;
@@ -22,6 +23,7 @@
             font-size: 2em;
             font-weight: bold;
         }
+
         .banner {
             background-color: rgb(255, 68, 68);
             padding: 20px;
@@ -29,12 +31,25 @@
             align-items: center;
             justify-content: space-around;
         }
+
         .banner h2 {
-            color:rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
             font-size: 1.8em;
         }
-        .videos {
 
+        .videos {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+
+        .videos-grid {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .video-grid iframe {
+            border: none;
         }
     </style>
 </head>
@@ -43,7 +58,7 @@
     <header>
         GodOfFilmsΩ
     </header>
-    
+
     <h1>”Zeus, Your son has returned! I bring the destruction of Olympus!”</h1>
     <p>Conheça o Espartano bom de guerra, matador de deuses. Uma das franquias de jogos mais aclamadas pelo público,
         sendo conhecida pela sua história e destruição do Monte Olimpo.</p>
@@ -52,9 +67,20 @@
             <h2>Apenas o melhor do Deus da Guerra!</h2>
             <p>#godofwar</p>
         </div>
-        <iframe width="400" height="225"
-        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aptAs57fIeQ?si=klkhupsCHbCZosda"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="videos">
+        <h2>Recomendações extras sobre o Fantasma de Sparta</h2>
+        <div class="video-grid">
+            <iframe width="250" height="140" src="https://www.youtube.com/embed/Cjg62ldDo8U?si=ec4rRPEKmHj8zcu1"
+                title="CronologiaGoW"></iframe>
+            <iframe width="250" height="140" src="https://www.youtube.com/embed/Qqhc6hFOp7o?si=w07N66lXfanaaokt"
+                title="OrigemdoMundoGoW"></iframe>
+        </div>
     </section>
 </body>
-
 </html>
